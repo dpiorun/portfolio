@@ -1,15 +1,31 @@
+import { useState } from "react";
+import Head from "next/head";
+
 import Layout from "@/components/Layout";
 import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
 import ServiceItem from "@/components/ServiceItem";
+
 import { servicesData } from "@/data/services";
-import { useState } from "react";
 
 export default function Service() {
   const [openModal, setOpenModal] = useState(-1);
 
   return (
     <Layout>
+      <Head>
+        <title>Service | Damian Piorun</title>
+        <meta
+          name="description"
+          content="Here is an overview of what I can do for you."
+          key="desc"
+        />
+        <meta property="og:title" content="Service | Damian Piorun" />
+        <meta
+          property="og:description"
+          content="Here is an overview of what I can do for you."
+        />
+      </Head>
       <PageTitle title="service" description="What I do" />
       <Section maxCols={3} gap="sm">
         {servicesData.map((item) => (

@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import ListTriangle from "@/components/ListTriangle";
@@ -14,6 +15,19 @@ import {
 export default function About() {
   return (
     <Layout>
+      <Head>
+        <title>About me | Damian Piorun</title>
+        <meta
+          name="description"
+          content="A bit of information about me."
+          key="desc"
+        />
+        <meta property="og:title" content="About me | Damian Piorun" />
+        <meta
+          property="og:description"
+          content="A bit of information about me."
+        />
+      </Head>
       <PageTitle title="about" description="About me" />
       <section className="max-w-6xl px-4 sm:px-12">
         <div className="flex justify-center">

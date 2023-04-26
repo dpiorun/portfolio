@@ -1,11 +1,25 @@
+import Head from "next/head";
+import Image from "next/image";
 import Layout from "@/components/Layout";
 import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
-import Image from "next/image";
 
 export default function Contact() {
   return (
     <Layout>
+      <Head>
+        <title>Contact | Damian Piorun</title>
+        <meta
+          name="description"
+          content="Feel free to get in touch with me. You can find me on Upwork."
+          key="desc"
+        />
+        <meta property="og:title" content="Contact | Damian Piorun" />
+        <meta
+          property="og:description"
+          content="Feel free to get in touch with me. You can find me on Upwork."
+        />
+      </Head>
       <PageTitle title="Contact" description="Get in Touch" />
       <Section>
         <div className="flex text-xl">

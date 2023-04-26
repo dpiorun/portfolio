@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 
 import { Mulish, Montserrat } from "next/font/google";
-import Head from "next/head";
 
 const mulish = Mulish({
   variable: "--font-mulish",

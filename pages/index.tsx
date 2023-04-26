@@ -1,12 +1,26 @@
+import Head from "next/head";
+import Image from "next/image";
 import Layout from "@/components/Layout";
 import TypingAnimation from "@/components/TypingAnimation";
-import React from "react";
-import Image from "next/image";
+
 import { socialMedia } from "@/data/home";
 
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Web Developer | Damian Piorun</title>
+        <meta
+          name="description"
+          content="I am a frontend developer and freelancer."
+          key="desc"
+        />
+        <meta property="og:title" content="Web Developer | Damian Piorun" />
+        <meta
+          property="og:description"
+          content="I am a frontend developer and freelancer."
+        />
+      </Head>
       <section className="flex h-full grow flex-col items-center justify-center gap-x-20 text-center sm:w-[450px] lg:w-[830px] lg:flex-row">
         <div className="relative mb-10 min-h-[200px] min-w-[200px] rounded-full md:min-h-[300px] md:min-w-[300px]">
           <div className="absolute inset-0 animate-morph rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-[url('/img/prof_color.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply shadow-[inset_0px_0px_0px_9px_rgba(255,255,255,0.3)]" />

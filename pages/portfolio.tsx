@@ -1,15 +1,31 @@
-import Layout from "@/components/Layout";
 import { useState } from "react";
+import Head from "next/head";
 import Image from "next/image";
+
+import Layout from "@/components/Layout";
 import PageTitle from "@/components/PageTitle";
-import Section from "@/components/Section";
-import { portfolioItems } from "@/data/portfolio";
 import PortfolioItem from "@/components/PortfolioItem";
+import Section from "@/components/Section";
+
+import { portfolioItems } from "@/data/portfolio";
 
 export default function Portfolio() {
   const [openModal, setOpenModal] = useState(-1);
   return (
     <Layout>
+      <Head>
+        <title>Portfolio | Damian Piorun</title>
+        <meta
+          name="description"
+          content="A few examples of my projects."
+          key="desc"
+        />
+        <meta property="og:title" content="Portfolio | Damian Piorun" />
+        <meta
+          property="og:description"
+          content="A few examples of my projects."
+        />
+      </Head>
       <PageTitle title="portfolio" description="Web development portfolio" />
       <Section gap="sm" py="sm" maxCols={2}>
         {portfolioItems.map((project) => (
