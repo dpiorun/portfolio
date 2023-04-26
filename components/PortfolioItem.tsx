@@ -25,7 +25,7 @@ export default function PortfolioItem({ isOpen, onClose, data }: Props) {
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-10 sm:grid-cols-6 lg:gap-16">
-        <div className="italic opacity-70 sm:col-span-4">
+        <div className="grid gap-3 italic opacity-70 sm:col-span-4">
           {data.description}
         </div>
         <ul className="leading-10 sm:col-span-2">

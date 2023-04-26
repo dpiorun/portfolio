@@ -10,10 +10,23 @@ export const portfolioItems: PortfolioItem[] = [
       },
     ],
     title: "Design Studio Landing Page",
-    description: [
-      "I implemented a visually striking landing page for Flod, a modern design studio, using Webflow framework and a necessary dose of custom javascript code. The website effectively showcases Flod`s expertise and creative prowess with its clean and minimalist design.",
-      "Overall, this project was a challenging and rewarding opportunity to work with a client who values creativity and innovation.",
-    ],
+    description: (
+      <>
+        <p>
+          I implemented a visually striking landing page for Flod, a modern
+          design studio, using Webflow framework and a necessary dose of custom
+          javascript code.
+        </p>
+        <p>
+          The website effectively showcases Flod`s expertise and creative
+          prowess with its clean and minimalist design.
+        </p>
+        <p>
+          Overall, this project was a challenging and rewarding opportunity to
+          work with a client who values creativity and innovation
+        </p>
+      </>
+    ),
     info: {
       client: "GoGoApps",
       stack: "Webflow, GSAP",
@@ -55,20 +68,22 @@ export const portfolioItems: PortfolioItem[] = [
           <a
             href="https://randomuser.me/"
             style={{ textDecoration: "underline" }}
+            target="_blank"
           >
             randomuser.me
           </a>{" "}
           to generate random user data. The layout of the application is similar
           to the one presented in{" "}
           <a
-            href="www.dribbble.com/shots/3698858-Chat-App-Design"
+            href="https://www.dribbble.com/shots/3698858-Chat-App-Design"
             style={{ textDecoration: "underline" }}
+            target="_blank"
           >
             Dribble
           </a>
           .
         </p>
-        <p className="mt-6">
+        <p>
           The user list panel displays a list of ten users along with the
           content of their latest sent/received message, the time elapsed since
           the last message, and a search bar that filters users by name. The
