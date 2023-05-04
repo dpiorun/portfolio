@@ -31,7 +31,7 @@ export default function About() {
       <PageTitle title="about" description="About me" />
       <section className="max-w-6xl px-4 sm:px-12">
         <div className="flex justify-center">
-          <div className="relative aspect-square w-full sm:w-9/12 lg:w-6/12">
+          <div className="relative aspect-video w-full">
             <Image
               fill
               src={introContent.image}

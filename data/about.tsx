@@ -1,5 +1,5 @@
 export const introContent = {
-  image: "/img/prof_color.jpg",
+  image: "/img/cover.jpg",
   name: "Damian Piorun",
   designation: "Web Developer",
   text: (

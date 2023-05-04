@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <section className="flex h-full grow flex-col items-center justify-center gap-x-20 text-center sm:w-[450px] lg:w-[830px] lg:flex-row">
         <div className="relative mb-10 min-h-[200px] min-w-[200px] rounded-full md:min-h-[300px] md:min-w-[300px]">
-          <div className="absolute inset-0 animate-morph rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-[url('/img/prof_color.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply shadow-[inset_0px_0px_0px_9px_rgba(255,255,255,0.3)]" />
+          <div className="absolute inset-0 animate-morph rounded-[60%_40%_30%_70%/60%_30%_70%_40%] bg-[url('/img/profil.jpg')] bg-cover bg-center bg-no-repeat bg-blend-multiply shadow-[inset_0px_0px_0px_9px_rgba(255,255,255,0.3)]" />
         </div>
         <div className="lg:text-left">
           <h1 className="mb-4 text-5xl font-black uppercase">Damian Piorun</h1>
