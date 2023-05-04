@@ -41,11 +41,11 @@ export default function About() {
           </div>
         </div>
 
-        <div className="w-full border-b border-neutral-600 py-9">
+        <div className="w-full border-b border-neutral-200 py-9 dark:border-neutral-600">
           <h2>{introContent.name}</h2>
           <span className="opacity-70">{introContent.designation}</span>
         </div>
-        <div className="grid w-full gap-3 border-b border-neutral-600 py-9 opacity-70">
+        <div className="grid w-full gap-3 border-b border-neutral-200 py-9 opacity-70 dark:border-neutral-600">
           {introContent.text}
         </div>
 
@@ -73,7 +73,7 @@ export default function About() {
             <div className="mt-10 italic">
               {item?.progress?.map((skill, indexSkill) => (
                 <div
-                  className="mt-4 border-b border-neutral-600"
+                  className="mt-4 border-b border-neutral-200 dark:border-neutral-600"
                   key={indexSkill}
                 >
                   <span>
@@ -108,17 +108,17 @@ export default function About() {
             <h3>{item.title}</h3>
             <ul
               role="list"
-              className="relative mt-10 before:absolute before:h-full before:w-px before:bg-neutral-600"
+              className="relative mt-10 before:absolute before:h-full before:w-px before:bg-neutral-200 dark:before:bg-neutral-600"
             >
               {item?.resume?.map((value, indexLi) => (
                 <li
                   key={indexLi}
-                  className="before:first:top-4.5 before:top-6.5 relative flex items-center gap-7 py-6 pl-5 leading-6 before:absolute before:left-[-10px] before:h-[20px] before:w-[20px] before:rounded-full before:border before:border-neutral-600 before:bg-white first:pt-2 last:pb-2 dark:before:bg-black"
+                  className="before:first:top-4.5 before:top-6.5 relative flex items-center gap-7 py-6 pl-5 leading-6 before:absolute before:left-[-10px] before:h-[20px] before:w-[20px] before:rounded-full before:border before:border-neutral-200 before:bg-white first:pt-2 last:pb-2 dark:before:border-neutral-600 dark:before:bg-black"
                 >
-                  <div className="h-fit whitespace-nowrap rounded-[50px] bg-neutral-800 px-5 py-1 text-sm">
+                  <div className="h-fit whitespace-nowrap rounded-[50px] bg-neutral-300 px-5 py-1 text-sm dark:bg-neutral-800">
                     {value.year}
                   </div>
-                  <div className="place">
+                  <div>
                     <h4>{value.institute}</h4>
                     <span className="text-sm opacity-70">{value.degree}</span>
                   </div>

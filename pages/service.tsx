@@ -31,10 +31,10 @@ export default function Service() {
         {servicesData.map((item) => (
           <div
             key={item.id}
-            className="group flex flex-col px-8 py-12 hover:cursor-pointer dark:bg-neutral-800"
+            className="group flex flex-col border border-neutral-200 bg-white px-8 py-12 hover:cursor-pointer hover:border-neutral-300 dark:border-none dark:bg-neutral-800"
             onClick={() => setOpenModal(item.id)}
           >
-            <h4 className="flex h-16 w-16 items-center justify-center rounded-full transition-all duration-300 group-hover:brightness-125 dark:bg-neutral-700">
+            <h4 className="flex h-16 w-16 items-center justify-center rounded-full bg-neutral-200 transition-all duration-300 group-hover:bg-neutral-300 dark:bg-neutral-700 dark:group-hover:bg-neutral-600">
               {item.no}
             </h4>
             <h3 className="mt-8 capitalize">{item.title}</h3>

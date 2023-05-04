@@ -51,7 +51,7 @@ export default function Sidebar() {
           onClick={() => setOpenSideMenu(false)}
         />
       )}
-      <div className="relative z-10 flex items-center justify-between bg-neutral-700 p-4 xl:hidden">
+      <div className="relative z-10 flex items-center justify-between bg-white p-4 dark:bg-neutral-700 xl:hidden">
         <Logo />
 
         <BurgerButton
@@ -62,7 +62,7 @@ export default function Sidebar() {
 
       <div
         data-ui={openSideMenu ? "active" : undefined}
-        className="fixed left-0 top-0 z-10 flex h-screen w-72 translate-x-[-100%] items-center border-r-gray-900 bg-black px-10 transition-all duration-300 data-active:translate-x-0 xl:translate-x-0 2xl:w-[450px] 2xl:px-28"
+        className="fixed left-0 top-0 z-10 flex h-screen w-72 translate-x-[-100%] items-center border-r-gray-900 bg-white px-10 transition-all duration-300 data-active:translate-x-0 dark:bg-black xl:translate-x-0 2xl:w-[450px] 2xl:px-28"
       >
         <div className="w-full">
           <Logo />
@@ -73,7 +73,7 @@ export default function Sidebar() {
                 <Link
                   href={item.routePath}
                   data-ui={asPath == item.routePath ? "active" : undefined}
-                  className="mb-2.5 mr-2.5 inline-block flex w-full font-medium font-medium opacity-70 transition-all duration-300 hover:tracking-widest data-active:tracking-widest data-active:opacity-100"
+                  className="mb-2.5 mr-2.5 inline-block flex w-full font-medium font-medium opacity-60 transition-all duration-300 hover:tracking-widest data-active:tracking-widest data-active:opacity-100"
                 >
                   <Image
                     width={15}

@@ -23,7 +23,7 @@ export default function Modal({
         onClick={onClose}
         className="fixed left-1/2 top-1/2 z-40 h-screen w-screen translate-x-[-50%] translate-y-[-50%] bg-black bg-opacity-75 transition-all duration-700"
       ></div>
-      <div className="fixed left-1/2 top-1/2 z-50 max-h-[80vh] w-[95%] translate-x-[-50%] translate-y-[-50%] dark:bg-neutral-800 md:w-[730px] lg:w-[968px]">
+      <div className="fixed left-1/2 top-1/2 z-50 max-h-[80vh] w-[95%] translate-x-[-50%] translate-y-[-50%] rounded bg-neutral-100 dark:bg-neutral-800 md:w-[730px] lg:w-[968px]">
         <button
           aria-label="close modal"
           onClick={onClose}
@@ -34,7 +34,7 @@ export default function Modal({
             alt="close"
             width={45}
             height={45}
-            className="dark:invert"
+            className="invert transition-all duration-300 hover:opacity-70"
           />
         </button>
         <div

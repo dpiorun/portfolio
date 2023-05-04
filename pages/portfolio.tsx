@@ -41,7 +41,7 @@ export default function Portfolio() {
               fill
               className="object-contain transition-all duration-300 group-hover:scale-110"
             />
-            <div className="absolute bottom-0 left-5 right-5 translate-y-[102%] p-4 transition-all duration-300 group-hover:translate-y-[-20%] dark:bg-neutral-900">
+            <div className="absolute bottom-0 left-5 right-5 translate-y-[102%] rounded bg-neutral-100 p-4 transition-all duration-300 group-hover:translate-y-[-20%] dark:bg-neutral-900">
               <h3>{project.info.client}</h3>
               <span className="opacity-70">{project.info.stack}</span>
             </div>

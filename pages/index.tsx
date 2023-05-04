@@ -36,7 +36,7 @@ export default function Home() {
             {socialMedia.map((social, index) => (
               <li
                 key={index}
-                className="group transition-all duration-300 hover:invert-[0.8] dark:invert"
+                className="group transition-all duration-300 hover:opacity-75 dark:invert"
               >
                 <a href={social.href} target="_blank">
                   <Image
