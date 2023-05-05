@@ -45,8 +45,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className={`${mulish.variable} ${montserrat.variable}`}>
         <AnimatePresence mode="wait" initial={false}>
           <Component {...pageProps} />
-          <Analytics />
         </AnimatePresence>
+        <Analytics />
       </div>
     </>
   );
