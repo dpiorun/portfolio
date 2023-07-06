@@ -30,17 +30,6 @@ export default function About() {
       </Head>
       <PageTitle title="about" description="About me" />
       <section className="max-w-6xl px-4 sm:px-12">
-        <div className="flex justify-center">
-          <div className="relative aspect-video w-full">
-            <Image
-              fill
-              src={introContent.image}
-              alt="about"
-              className="object-cover"
-            />
-          </div>
-        </div>
-
         <div className="w-full border-b border-neutral-200 py-9 dark:border-neutral-600">
           <h2>{introContent.name}</h2>
           <span className="opacity-70">{introContent.designation}</span>
